@@ -1,9 +1,10 @@
 import { test, expect } from "@playwright/test";
 
-test("get started link", async ({ page }) => {
+test.only("get started link", async ({ page }) => {
   await page.goto("https://www.onliner.by/");
   // Click the get started link.
-  await page.getByRole("link", { name: "Наши соцсети" }).click();
+  await page.getByRole("link", { name: "Все новости о финансах" }).click();
+  await expect(page).toHaveURL("https://money.onliner.by/");
 }); //ok
 
 test("has title", async ({ page }) => {
