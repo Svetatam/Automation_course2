@@ -71,7 +71,7 @@ test("n-element from list", async ({ page }) => {
   await expect(page).toHaveURL("https://r.onliner.by/pk/");
 });
 
-test("find list", async ({ page }) => {
-  await page.goto("https://www.onliner.by/");
-  await page.locator(".b-main-navigation");
-});
+// test("find list", async ({ page }) => {
+//   await page.goto("https://www.onliner.by/");
+//   await page.locator(".b-main-navigation");
+// });
